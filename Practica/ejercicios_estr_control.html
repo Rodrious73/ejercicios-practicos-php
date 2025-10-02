@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de Control</title>
+</head>
+<body>
+    <p>
+        <b>Ejemplo 01: </b> <br>
+        Diseñar un Programa en PHP que permita determinar si un estudiante aprueba el
+        curso si este obtiene un promedio aprobatorio en base a:
+        EP: 35%
+        EF: 35%
+        PC: 30% (Promedio de 2 Practicas)
+    </p>
+    <form action="ejercicios_de_control/ejemplo01.php" method="post">
+        <fieldset>
+            <label for="">Curso</label> <br>
+            <label for="">Examen Parcial</label>
+            <input type="text" id="txtEP" name="txtEP"> <br>
+
+            <label for="">Examen Final</label>
+            <input type="text" id="txtEF" name="txtEF"> <br>
+
+            <label for="">Practica calificada 01: </label>
+            <input type="text" id="txtPC1" name="txtPC1"> <br>
+
+            <label for="">Practica calificada 02: </label>
+            <input type="text" id="txtPC2" name="txtPC2"> <br>
+
+            <input type="submit" value="Enviar" name="btnEnviar">
+            <input type="reset" value="Limpiar" name="btnLimpiar">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <p>
+        <b>Ejemplo 02: </b> <br>
+        Diseñar un Programa en PHP que permita ingresar 5 números enteros y determine quién es el mayor.
+    </p>
+    <form action="ejercicios_de_control/ejemplo02.php" method="post">
+        <fieldset>
+            <label for="">Numeros</label> <br>
+            <label for="">Primer numero</label>
+            <input type="text" name="primerNumero"> <br>
+
+            <label for="">Segundo numero</label>
+            <input type="text" name="segundoNumero"> <br>
+
+            <label for="">Tercer numero</label>
+            <input type="text"  name="tercerNumero"> <br>
+
+            <label for="">Cuarto numero</label>
+            <input type="text" name="cuartoNumero"> <br>
+
+            <label for="">Quinto numero</label>
+            <input type="text" name="quintoNumero"> <br>
+
+            <input type="submit" value="Enviar" name="btnEnviar">
+            <input type="reset" value="Limpiar" name="btnLimpiar">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <p>
+        <b>Ejemplo 03: </b> <br>
+        Diseñar un Programa en PHP que permite ingresar un numero entero entre 1 y 10 y muestre su equivalente en números romanos.
+    </p>
+    <form action="ejercicios_de_control/ejemplo03.php" method="post">
+        <fieldset>
+            <label for="">Ingresa un numero del 1 al 10: </label>
+            <input type="text" name="numero"> <br>
+
+            <input type="submit" value="Enviar" name="btnEnviar">
+            <input type="reset" value="Limpiar" name="btnLimpiar">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <p>
+        <b>Ejercicio 08: </b> <br>
+        Determine el importe a pagar para el examen de admisión de una universidad, cuyo valor depende del nivel socioeconómico y el colegio de procedencia.
+        <br>
+        <img src="ejercicios_de_control/ejercicio08.png" alt="" width="500" height="100">
+    </p>
+    <form action="ejercicios_de_control/ejercicio08.php" method="post">
+        <fieldset>
+            <label for="">Nivel socioeconómico [A] , [B], [C]: </label>
+            <select name="selectNivel" >
+                <option value="">Selecciona: </option>
+                <option value="A">Nivel socioeconómico [A]</option>
+                <option value="B">Nivel socioeconómico [B]</option>
+                <option value="C">Nivel socioeconómico [C]</option>
+            </select> <br>
+
+            <label for="">Colegio [P]articular , [N]acional: </label>
+            <select name="selectColegio" >
+                <option value="">Selecciona: </option>
+                <option value="P">[P]articular</option>
+                <option value="N">[N]acional</option>
+            </select> <br>
+
+            <input type="submit" value="Enviar" name="btnEnviar">
+            <input type="reset" value="Limpiar" name="btnLimpiar">
+        </fieldset>
+    </form>
+
+
+</body>
+</html>

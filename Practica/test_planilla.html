@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilla de Pagos</title>
+</head>
+
+<body>
+    <h1>Planilla de Pagos</h1>
+
+    <h2>Información del Sistema</h2>
+    <p><strong>Tarifa por hora:</strong> S/ 15.00</p>
+    <p><strong>Descuento AFP:</strong> 11.8%</p>
+    <p><strong>Descuento 5ta Categoría:</strong> 18%</p>
+    <p><strong>Bonificación:</strong> 16%</p>
+
+    <hr>
+
+    <h2>Formulario de Prueba</h2>
+    <form method="POST" action="planilla_pagos.php">
+        <label for="dias_trabajados">Días trabajados:</label></td>
+        <input type="number" id="dias_trabajados" name="dias_trabajados" step="1" min="0" placeholder="Ej: 20">
+        <label for="horas_trabajadas">Horas trabajadas:</label></td>
+        <input type="number" id="horas_trabajadas" name="horas_trabajadas" step="0.5" min="0" placeholder="Ej: 160">
+        <input type="submit" value="Calcular Pago">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+
+</html>

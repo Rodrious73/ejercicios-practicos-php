@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura de Control de PHP</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <section id="content">
+        <header>
+            <h1>ESTRUCTURA DE CONTROL DE PHP</h1>
+        </header>
+        
+        <nav>
+            <li><a href="index.html">ESTRUCTURAS DE CONTROL</a></li>
+            <li><a href="estr_repetitivas.html">ESTRUCTURAS REPETITIVAS</a></li>
+        </nav>
+        
+        <section id="main">
+            <article>
+                <h2>Ejemplo 01:</h2>
+                <p>Diseñar un Programa en PHP que permita determinar si un estudiante aprueba el
+                curso si este obtiene un promedio aprobatorio en base a:
+                EP: 35%
+                EF: 35%
+                PC: 30% (Promedio de 2 Practicas)</p>
+                
+                <form action="estr_control/ejemplo01.php" method="post">
+                    <fieldset>
+                        <legend>Datos del estudiante</legend>
+                        <label for="txtEP">Examen Parcial</label>
+                        <input type="text" id="txtEP" name="txtEP"> <br>
+
+                        <label for="txtEF">Examen Final</label>
+                        <input type="text" id="txtEF" name="txtEF"> <br>
+
+                        <label for="txtPC1">Practica calificada 01:</label>
+                        <input type="text" id="txtPC1" name="txtPC1"> <br>
+
+                        <label for="txtPC2">Practica calificada 02:</label>
+                        <input type="text" id="txtPC2" name="txtPC2"> <br>
+                        
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejemplo 02:</h2>
+                <p>Diseñar un Programa en PHP que permita ingresar 5 números enteros y determine quién es el mayor.</p>
+                
+                <form action="estr_control/ejemplo02.php" method="post">
+                    <fieldset>
+                        <legend>Ingreso de números</legend>
+                        <label for="num1">Primer número</label>
+                        <input type="text" id="num1" name="primerNumero"> <br>
+
+                        <label for="num2">Segundo número</label>
+                        <input type="text" id="num2" name="segundoNumero"> <br>      
+
+                        <label for="num3">Tercer número</label>
+                        <input type="text" id="num3" name="tercerNumero"> <br>
+                        
+                        <label for="num4">Cuarto número</label>
+                        <input type="text" id="num4" name="cuartoNumero"> <br>
+
+                        <label for="num5">Quinto número</label>
+                        <input type="text" id="num5" name="quintoNumero"> <br>
+                        
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejemplo 03:</h2>
+                <p>Diseñar un Programa en PHP que permite ingresar un numero entero entre 1 y 10 y muestre su equivalente en números romanos.</p>
+                
+                <form action="estr_control/ejemplo03.php" method="post">
+                    <fieldset>
+                        <label for="">Ingresa un numero del 1 al 10: </label>
+                        <input type="text" name="numero"> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejercicio 01:</h2>
+                <p> Elabore un programa que permita calcular el descuento según el valor de la compra
+                    de un cliente. Si la compra es igual o mayor a S/. 1000.00 se le otorgará el descuento
+                    del 10%. Mostrar el valor inicial, el descuento y el total neto a pagar.
+                </p>
+
+                <form action="estr_control/ejercicio01.php" method="post">
+                    <fieldset>
+                        <label for="">Valor de la compra: </label>
+                        <input type="text" name="valorCompra"> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejercicio 02:</h2>
+                <p> Que pida tres números e indicar si el tercero es igual a la suma del primero y el segundo.</p>
+
+                <form action="estr_control/ejercicio02.php" method="post">
+                    <fieldset>
+                        <label for="">Primer numero: </label>
+                        <input type="text" name="primerNumero"> <br>
+
+                        <label for="">Segundo numero: </label>
+                        <input type="text" name="segundoNumero"> <br>
+
+                        <label for="">Tercer numero: </label>
+                        <input type="text" name="tercerNumero"> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejercicio 03:</h2>
+                <p> 
+                    Elabore un programa que acepte un número del año mayor a 2000 y muestre
+                    "PRESENTE" si el número es el año actual, "PASADO" si es menor o "FUTURO" si es
+                    mayor, en razón al año actual.
+                </p>
+
+                <form action="estr_control/ejercicio03.php" method="post">
+                    <fieldset>
+                        <label for="">Ingrese año mayor a 2000: </label>
+                        <input type="text" name="anio"> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejercicio 04:</h2>
+                <p> 
+                    Elabore un programa que solicite el nombre y la edad de 2 hermanos. Realice la
+                    comparación de las edades y muestre un mensaje indicando el nombre del hermano
+                    mayor y cuantos años de diferencia tiene con el menor.
+                </p>
+
+                <form action="estr_control/ejercicio04.php" method="post">
+                    <fieldset>
+                        <label for="">Nombre 01:</label>
+                        <input type="text" name="nombre1"> <br>
+                        <label for="">Edad 01:</label>
+                        <input type="text" name="edad1"> <br>
+
+                        <label for="">Nombre 02:</label>
+                        <input type="text" name="nombre2"> <br>
+                        <label for="">Edad 02:</label>
+                        <input type="text" name="edad2"> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejercicio 05:</h2>
+                <p> 
+                    Leer un número entero positivo e identificar si es de un dígito, dos dígitos, tres dígitos o más de tres dígitos.
+                </p>
+
+                <form action="estr_control/ejercicio05.php" method="post">
+                    <fieldset>
+                        <label for="">Ingrese numero entero: </label>
+                        <input type="text" name="numEntero"> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejercicio 06:</h2>
+                <p> 
+                    Elabore un programa que permita determinar la temperatura corporal de una persona, según la medida de un termómetro.
+                    <ol type="a">
+                        <li> > 39º Fiebre Alta: Diríjase al Centro de Salud más cercano</li>
+                        <li>   37º - 38º Fiebre: Tómese una pastilla y repose</li>
+                        <li>   35º - 36º Temperatura Normal</li>
+                        <li> < 35º Temperatura muy baja: Tómese algo caliente</li>
+                    </ol>
+                </p>
+
+                <form action="estr_control/ejercicio05.php" method="post">
+                    <fieldset>
+                        <label for="">Ingrese numero entero: </label>
+                        <input type="text" name="numEntero"> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejercicio 07:</h2>
+                <p> 
+                    El NIF (o letra asociada a un DNI) se obtiene de la siguiente manera:
+                    <ol type="a">
+                        <li>Se divide el número de DNI entre 23 y el resto es codificado por una letra según la siguiente tabla de equivalencias:</li>
+                        <img src="estr_control/ejercicio07.png" alt="" width="700" height="100">
+                        <li>Escribe un programa que pida el DNI y ofrezca como resultado letra asociada.</li>
+                        <li>Ejemplo: para el DNI 56321122 el NIF es ‘X’.</li>
+                    </ol>
+                </p>
+
+                <form action="estr_control/ejercicio07.php" method="post">
+                    <fieldset>
+                        <label for="">Ingrese su numero de DNI: </label>
+                        <input type="text" name="numdni"> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejercicio 08:</h2>
+                <p> 
+                   Determine el importe a pagar para el examen de admisión de una universidad, cuyo valor depende del nivel socioeconómico y el colegio de procedencia.
+                    <br>
+                    <img src="estr_control/ejercicio08.png" alt="" width="500" height="100">
+                </p>
+
+                <form action="estr_control/ejercicio08.php" method="post">
+                    <fieldset>
+                        <label for="">Nivel socioeconómico [A] , [B], [C]: </label>
+                        <select name="selectNivel" >
+                            <option value="">Selecciona: </option>
+                            <option value="A">Nivel socioeconómico [A]</option>
+                            <option value="B">Nivel socioeconómico [B]</option>
+                            <option value="C">Nivel socioeconómico [C]</option>
+                        </select> <br>
+
+                        <label for="">Colegio [P]articular , [N]acional: </label>
+                        <select name="selectColegio" >
+                            <option value="">Selecciona: </option>
+                            <option value="P">[P]articular</option>
+                            <option value="N">[N]acional</option>
+                        </select> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+
+            <article>
+                <h2>Ejercicio 09:</h2>
+                <p> 
+                   Al ingresar el día y el numero de un mes, devolver la estación del año de acuerdo a la siguiente tabla:
+                    <br>
+                    <img src="estr_control/ejercicio09.png" alt="" width="500" height="150">
+                </p>
+
+                <form action="estr_control/ejercicio09.php" method="post">
+                    <fieldset>
+                        
+                        <label for="">Ingrese el dia: </label>
+                        <input type="text" name="dia"> <br>
+
+                        <label for="">Ingrese el numero de mes: </label>
+                        <input type="text" name="numes"> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <article>
+                <h2>Ejercicio 10:</h2>
+                <p> 
+                   Programa que permita el ingreso del día y mes de nacimiento, indique a que signo zodiacal que corresponde según la imagen:
+                    <br>
+                    <img src="estr_control/ejercicio10.png" alt="" width="500" height="250">
+                </p>
+
+                <form action="estr_control/ejercicio10.php" method="post">
+                    <fieldset>
+                        
+                        <label for="">Ingrese el dia: </label>
+                        <input type="text" name="dia"> <br>
+
+                        <label for="">Seleccione mes: </label>
+                        <select name="numes">
+                            <option value="" selected disabled>Selecciona:</option>
+                            <option value="1">Enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Mayo</option>
+                            <option value="6">Junio</option>
+                            <option value="7">Julio</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Diciembre</option>
+                        </select> <br>
+
+                        <input type="submit" value="Enviar" name="btnEnviar">
+                        <input type="reset" value="Limpiar" name="btnLimpiar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+            <hr>
+            <br>
+            
+        </section>
+        
+        <footer>
+            <p>Todos los derechos reservados por:</p> 
+            <ul>
+                <li>Cadillo Carreño Rodrigo Kristopher</li>
+                <li>Juarez Arevalo Jair Jose</li>
+                <li>Rodriguez Bañez Nathalin Lizbeth</li>
+            </ul>
+        </footer>
+    </section>
+</body>
+</html>

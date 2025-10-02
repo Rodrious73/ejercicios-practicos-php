@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <b>Ejercicio 01: </b> <br>
+        Leer el sueldo de tres empleados y aplicarles un aumento del 10, 12 y 15% respectivamente.
+        Desplegar el resultado.
+    </p>
+    <form action="ejercicios_secuenciales/ejercicio01.php" method="post">
+        <label for="nombre">Nombre 01:</label>
+        <input type="text" id="txtNombre1" name="txtNombre1"><br>
+        <label>Ingrese el sueldo del empleado 1:</label>
+        <input type="text" id="txtSueldo1" name="txtSueldo1"><br>
+
+        <label for="nombre">Nombre 02:</label>
+        <input type="text" id="txtNombre2" name="txtNombre2"><br>
+        <label>Ingrese el sueldo del empleado 2:</label>
+        <input type="text" id="txtSueldo2" name="txtSueldo2"><br>
+
+        <label for="nombre">Nombre 03:</label>
+        <input type="text" id="txtNombre3" name="txtNombre3"><br>
+        <label>Ingrese el sueldo del empleado 3:</label>
+
+        <input type="text" id="txtSueldo3" name="txtSueldo3"><br>
+        <input type="submit" value="Enviar" name="btnEnviar">
+        <input type="reset" value="Limpiar" name="btnLimpiar">
+    </form>
+
+    <hr>
+
+    <p>
+        <b>Ejercicio 02: </b> <br>
+        Leer dos números enteros y encontrar:
+        <ol type="a">
+            <li >
+                La suma del doble del primero más el cuadrado del segundo.
+            </li>
+            <li>
+                El promedio de sus cubos.
+            </li>
+        </ol>
+    </p>
+
+    <form action="ejercicios_secuenciales/ejercicio02.php" method="post">
+        <label for="">Primer numero entero:</label>
+        <input type="text" name="txtPrimerNumero" placeholder="Ej. 20"><br>
+
+        <label for="">Segundo numero entero: </label>
+        <input type="text" name="txtSegundoNumero" placeholder="Ej.90"> <br>
+
+        <input type="submit" value="Enviar" name="btnEnviar">
+        <input type="reset" value="Limpiar" name="btnLimpiar">
+    </form>
+
+    <hr>
+
+    <p>
+        <b>Ejercicio 03: </b> <br>
+        El IESTP VRHT tiene: X alumnos en Computación, Y alumnos en Contabilidad y Z alumnos en
+        Enfermería. Indicar el porcentaje de alumnos de cada carrera en el Instituto.
+    </p>
+
+        <form action="ejercicios_secuenciales/ejercicio03.php" method="post">
+            <label for="">Alumnos en computacion:</label>
+            <input type="text" name="txtComputacion"> <br>
+
+            <label for="">Alumnos en contabilidad:</label>
+            <input type="text" name="txtContabilidad"> <br>
+
+            <label for="">Alumnos en enfermeria:</label>
+            <input type="text" name="txtEnfermeria"> <br>
+
+            <input type="submit" value="Enviar" name="btnEnviar">
+            <input type="reset" value="Limpiar" name="btnLimpiar">
+        </form>
+
+    <hr>
+
+    <p>
+        <b>Ejercicio 04: </b> <br>
+        Leer tres números enteros de un Digito y almacenarlos en una sola variable que contenga a
+        esos tres dígitos Por ejemplo si A=5 y B=6 y C=2 entonces X=562.
+    </p>
+
+    <form action="ejercicios_secuenciales/ejercicio04.php" method="post">
+        <label for="">Primer digito:</label>
+        <input type="text" name="primerDigito"> <br>
+
+        <label for="">Segundo digito:</label>
+        <input type="text" name="segundoDigito"> <br>
+
+        <label for="">Tercer digito:</label>
+        <input type="text" name="tercerDigito"> <br>
+
+        <input type="submit" value="Enviar" name="btnEnviar">
+        <input type="reset" value="Limpiar" name="btnLimpiar">
+    </form>
+
+    <hr>
+
+    <p>
+        <b>Ejercicio 05: </b> <br>
+        Diseñe un programa en PHP para repartir una cantidad de dinero a tres personas en forma
+        proporcional a sus edades. El monto que le corresponde a cada persona se calcula con la
+        siguiente fórmula: <br>
+        <img src="formula.png" alt="" width="500" height="100">    
+    </p>
+
+    <form action="ejercicios_secuenciales/ejercicio05.php" method="post">
+        <label for="">Persona 01 - Edad:</label>
+        <input type="text" name="txtEdad1"> <br>
+
+        <label for="">Persona 02 - Edad:</label>
+        <input type="text" name="txtEdad2"> <br>
+
+        <label for="">Persona 03 - Edad:</label>
+        <input type="text" name="txtEdad3"> <br>
+
+        <label for="">Monto a repartir:</label>
+        <input type="text" name="txtRepartir"> <br>
+
+        <input type="submit" value="Enviar" name="btnEnviar">
+        <input type="reset" value="Limpiar" name="btnLimpiar">
+    </form>
+
+    <hr>
+    <p>
+        <b>Ejercicio 06: </b> <br>
+        Una institución social tiene un centro de salud, un comedor infantil, una escuela infantil y un
+        asilo de ancianos. La institución recibe anualmente una donación que lo reparte de la siguiente
+        forma: 25% de la donación para la implementación del centro de salud, 35% de la donación
+        para el comedor infantil, 25% de la donación para la escuela infantil y el resto para el asilo de
+        ancianos. Diseñe un programa para efectuar el reparto de la donación.
+    </p>
+    <form action="ejercicios_secuenciales/ejercicio06.php" method="post">
+        <label>Ingrese la donación:</label>
+        <input type="text" id="txtDonacion" name="txtDonacion">
+        <input type="submit" value="Enviar" name="btnEnviar">
+        <input type="reset" value="Limpiar" name="btnLimpiar">
+    </form>
+
+    <hr>
+
+    <hr>
+    <p>
+        <b>Ejercicio 07: </b> <br>
+        Leer una cantidad expresada en soles y transformarla a su equivalente en dólares y en Euros
+        (Tipo de cambio 1 dólar = 3.25 soles, 1 Euro = 1.15 dólar).
+    </p>
+
+    <form action="ejercicios_secuenciales/ejercicio07.php" method="post">
+        <label>Ingrese la cantidad en soles:</label>
+        <input type="text" id="txtSoles" name="txtSoles">
+        <input type="submit" value="Enviar" name="btnEnviar">
+        <input type="reset" value="Limpiar" name="btnLimpiar">
+    </form>
+
+    <hr>
+</body>
+</html>
